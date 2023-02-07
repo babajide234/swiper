@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    :root{        
+        --primary:#395B86;
+        --secondary:#fff;
+        --text: #333;
+        --accent: #ccc
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* flex: 1 1 auto; */
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .phone{
+        width: 100%;
+        height: 100vh;
+        background-color:var(--secondary);
+        padding:20px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        width:100%;
+        text-decoration: none;
+        text-align: center;
+        padding:15px;
+        border-radius:10px;
+        font-size:20px;
+        font-weight:700;
+        margin: 10px 0px;
+    }
+
+    .btn-default{
+        background-color:var(--primary);
+        color: var(--secondary);
+    }
+    .btn-line{
+        background:transparent;
+        border: 1px solid var(--primary);
+        color: var(--primary);
+    }
+
+    .buttons-ctn{
+        flex: 0 1 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn:hover{
+  cursor:pointer;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="phone">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/Aliena.png" alt="" class="image">
+            <div class="">
+              <p class="">Now you can Shop your favorite biscuits, chocolate and cereals from your favorite US & UK stores .</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Tesco.png" alt="" class="image">
+              
+            <div class="">
+                <p class="">Order your biscuits, cookies and more from TESCO UK and have it delivered to your doorstep in Nigeria</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Aldi.png" alt="" class="image">
+              
+            <div class="">
+                <p class="">Order your biscuits, chocolate and  more from ALDI UK and have it delivered to your doorstep in Nigeria</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Waitrose.png" alt="" class="image">
+              
+            <div class="">
+                <p class="">Order your biscuits, cookies and more from WAITROSE UK and have it delivered to your doorstep in Nigeria</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/walmart.png" alt="" class="image">
+              
+              <div class="">
+                  <p class="">Order your biscuits, cookies and more from WALMART AMERICA  and have it delivered to your doorstep in Nigeria</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons-ctn">
+        <a href="http://aliena.co.uk/" class="btn btn-default">Start Shopping</a>
+      </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {});
+  </script>
+</body>
+
+</html>
