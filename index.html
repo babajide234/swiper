@@ -138,6 +138,7 @@
               </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
       <div class="buttons-ctn">
         <a href="http://aliena.co.uk/" class="btn btn-default">Start Shopping</a>
@@ -149,7 +150,15 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {});
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
   </script>
 </body>
 
